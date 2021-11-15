@@ -1,9 +1,11 @@
+import { FederationModule } from './federation/federation.module';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { LayoutsModule } from './layouts/layouts.module';
 
 @NgModule({
   declarations: [
@@ -11,8 +13,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule ,
     AppRoutingModule,
-    BrowserAnimationsModule 
+    FederationModule,
+    LayoutsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
