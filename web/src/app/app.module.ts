@@ -1,3 +1,4 @@
+import { ClubModule } from './club/club.module';
 import { FederationModule } from './federation/federation.module';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,7 +17,8 @@ import { LayoutsModule } from './layouts/layouts.module';
     BrowserAnimationsModule ,
     AppRoutingModule,
     FederationModule,
-    LayoutsModule
+    LayoutsModule,
+    ClubModule
   ],
   providers: [],
   bootstrap: [AppComponent],
